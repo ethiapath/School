@@ -21,4 +21,19 @@ public:
     
 };
 
+class Link
+{
+private:
+    
+    
+    
+public:
+    
+    
+    
+    
+    
+    
+};
+
 #endif /* TextClass_h */
