@@ -62,6 +62,10 @@ public:
     
 //    Append the elements of list2 to the end of this list
     void appendList(TextClass * list2);
+    
+//    overloaded copy asignment
+    TextClass& operator= (const TextClass& oldList);
+
 };
 
 

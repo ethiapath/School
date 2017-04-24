@@ -200,8 +200,20 @@ std::string TextClass::displayList()
 
 void TextClass::appendList(TextClass * list2)
 {
+    TextClass list = *list2;
     this->insertTail(' ');
-    while ( !list2.isEmpty() ) {
-        this->insertTail(list2.deleteHead());
+    while ( !list.isEmpty() ) {
+        this->insertTail(list.deleteHead());
     }
+}
+
+TextClass& TextClass::operator= (const TextClass& oldList)
+{
+    TextClass newList;
+    TextLink * ptr = oldList.head;
+    while (ptr != nullptr) {
+        newList.insertHead(ptr->getData());
+        ptr = ptr->getNext();
+    }
+    return newList;
 }
