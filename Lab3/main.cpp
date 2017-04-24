@@ -21,7 +21,7 @@ int main(int args, char * argv[])
     
     // defines to select a given test
 #define TextClass_test
-//#define Append_test
+#define Append_test
 //#define StudentList_test
     
     
