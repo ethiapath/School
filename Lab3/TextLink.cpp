@@ -7,3 +7,32 @@
 //
 
 #include "TextLink.h"
+
+TextLink::TextLink(char data/* = ' '*/, TextLink * next/* = nullptr*/, TextLink * prev/* = nullptr*/):data(data), next(next), prev(prev)
+{
+    
+}
+
+
+char TextLink::getData()
+{
+    return data;
+}
+
+TextLink * TextLink::getNext()
+{
+    return next;
+}
+TextLink * TextLink::getPrev()
+{
+    return prev;
+}
+
+void TextLink::setNext(TextLink * next)
+{
+    this->next = next;
+}
+void TextLink::setPrev(TextLink * prev)
+{
+    this->prev = prev;
+}

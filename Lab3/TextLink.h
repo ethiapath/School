@@ -12,15 +12,19 @@
 class TextLink
 {
 private:
-    Link * next;
+    TextLink * next;
+    TextLink * prev;
     char data;
-    
 public:
+    TextLink(char d = ' ', TextLink * next = nullptr, TextLink * prev = nullptr);
     
+    char getData();
     
+    TextLink * getNext();
+    TextLink * getPrev();
     
-    
-    
+    void setNext(TextLink * next);
+    void setPrev(TextLink * prev);
     
 };
 
